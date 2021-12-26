@@ -94,13 +94,18 @@ int main()
 	for(i = 0 ; i < 5 ; i++){
 		add(&head, &tail, (i+1)); // add n [ 1, 2, 3, 4, 5 ]
 	}
+	printf("print node..\n");
 	printNode(head);
 	Node* start3 = findNode(head, 3); // when start head is 3 ...  3 -> 2 -> 1 -> 5 -> 4
+	printf("start3 node ...\n");
 	printNode(start3); // start node3 
 	deleteNode(&head, &tail, 5); // remove first node
+	printf("remove first node \n");
 	printNode(head);
+	printf("remove 3node\n");
 	deleteNode(&head, &tail, 3); // remove middle node
 	printNode(head);
+	printf("remove final node\n");
 	deleteNode(&head, &tail, 1); // remove tail node
 	printNode(head);
 }

@@ -77,9 +77,12 @@ int main()
 	for(i = 0 ; i < 5 ; i++){
 		add(&n, (i+1)); // add n [ 1, 2, 3, 4, 5 ]
 	}
+	printf("add nums ...\n");
 	printNode(n);
+	printf("remove first node\n");
 	deleteNode(&n, 5); // remove first node
 	printNode(n);
+	printf("remove 3 node\n");
 	deleteNode(&n, 3); // remove middle node
 	printNode(n);
 }
